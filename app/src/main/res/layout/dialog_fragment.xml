@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center">
+<FrameLayout android:background="@color/white"
+    android:alpha="0.6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</FrameLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_margin="100dp"
+    android:background="@drawable/ic_corner_dialog"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:id="@+id/content"/>
+    <ImageView
+        android:id="@+id/close"
+
+        android:layout_gravity="end"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/action_image" />
+    <TextView
+        android:id="@+id/skip"
+        android:layout_gravity="bottom"
+        android:text="@string/skip"
+        android:textSize="30sp"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:textColor="@color/theme_dark"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+</FrameLayout>
+</RelativeLayout>
