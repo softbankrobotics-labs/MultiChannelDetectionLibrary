@@ -29,7 +29,7 @@ import com.softbankrobotics.multichanneldetectionlibrary.utils.SaveFileHelper
 class MultiChannelDetection(activity: MultiChannelDetectionCallbacks) {
 
     companion object {
-        private const val TAG = "MSI_HumanDetection"
+        private const val TAG = "MultiChannelDetection"
         // Save Map
         const val mapFileName = "mapData.txt"
         // Localize

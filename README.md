@@ -1,8 +1,9 @@
-# Pepper Covid Assistant
+# MultiChannelDetection Library
 
 ## Library
 
-The module HumanDetection use both the native detection with the QiSDK and the library pepper-mask-detection to improve the detection of masked user.
+The module MultiChannelDetection uses both the native Human detection with the QiSDK and the library pepper-mask-detection to improve the detection of masked users.
+Regardless of the system detecting a human, this module will inform your application.
 
 ## How it work
 
@@ -22,7 +23,7 @@ Add the dependency on the face detection lib to your app build.gradle in the dep
 
 ```
 dependencies {
-	implementation 'com.github.softbankrobotics-labs:MultiChannelDetectionLibrary:2.1'
+	implementation 'com.github.softbankrobotics-labs:MultiChannelDetectionLibrary:2.2'
 }
 ```
 
@@ -36,7 +37,6 @@ class MainActivity : RobotActivity(), RobotLifecycleCallbacks, MultiChannelDetec
 
     private val KEY_REQUEST_PERMISSION = 102
 
-    ---
 }
 ```
 
@@ -187,7 +187,8 @@ List of options
 
 ## Application
 
-Pepper Covid Assistant is a application for Pepper to prevent and inform about the Covid19 and show a use case of the mask detection library
+This repository contains the library and a sample app to explain how to use it.
+Pepper Covid Assistant is an application for Pepper to prevent and inform about the Covid19 and show a use case of the MultiChannelDetection library.
 
 ## Features
 
@@ -215,7 +216,6 @@ Conversational Content
 * 'com.aldebaran:qisdk-conversationalcontent-greetings:0.19.1-experimental-05'
 * 'com.aldebaran:qisdk-conversationalcontent-askrobotname:0.19.1-experimental-05'
 * 'com.aldebaran:qisdk-conversationalcontent-robotabilities:0.19.1-experimental-05'
-* 'com.aldebaran:qisdk-conversationalcontent-notunderstood:0.19.1-experimental-05'
 * 'com.aldebaran:qisdk-conversationalcontent-repeat:0.19.1-experimental-05'
 * 'com.aldebaran:qisdk-conversationalcontent-volumecontrol:0.19.1-experimental-05'
 

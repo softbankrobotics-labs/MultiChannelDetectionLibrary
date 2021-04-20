@@ -27,19 +27,19 @@ import kotlin.collections.HashMap
  * @param qiContext  the activity qiContext
  * @param locale     the android locale you want to build the chat in
  * @param topicNames the names of the .top file you want to use in this chat bot
- * @param conversationContents : the conversationalContents
+ * @param conversationalContents : the conversationalContents
  * @param buildChat  if you are running the chat in the same activity that builds this object
  *
  * this should be set to true, otherwise set it to false and use startChat
  */
 
 class ChatData(
-    private val activity: Activity,
-    private val qiContext: QiContext,
-    private val locale: Locale,
-    private val topicNames: List<String>,
-    private val conversationContents: List<AbstractConversationalContent> = listOf(),
-    private val buildChat: Boolean?
+        private val activity: Activity,
+        private val qiContext: QiContext,
+        private val locale: Locale,
+        private val topicNames: List<String>,
+        private val conversationalContents: List<AbstractConversationalContent> = listOf(),
+        private val buildChat: Boolean?
 )
 {
     private val topics: MutableMap<String, Topic>
@@ -106,7 +106,7 @@ class ChatData(
         chat = ConversationalContentChatBuilder.with(qiContext)
             .withChatbot(qiChatbot)
             .withLocale(qiLocale)
-            .withConversationalContents(this.conversationContents)
+            .withConversationalContents(this.conversationalContents)
             .build()
     }
 
